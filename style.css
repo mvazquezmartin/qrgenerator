@@ -18,19 +18,15 @@ body {
 
   @media only screen and (max-width: 480px) {
     & {
-      flex-direction: column;      
+      flex-direction: column;
       padding-top: 2rem;
     }
   }
 }
 
 .container {
-  max-width: 400px;  
+  max-width: 400px;
   padding: 25px 35px;
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
   background: #fff;
   border-radius: 10px;
 }
@@ -86,7 +82,9 @@ button:active {
 #imgBox {
   width: 200px;
   border-radius: 5px;
-  max-height: 0;
+  max-height: 300px;
+  margin: 17px auto;
+  border: 1px solid #d1d1d1;
   overflow: hidden;
   transition: max-height 1s;
 }
@@ -94,12 +92,6 @@ button:active {
 #imgBox img {
   width: 100%;
   padding: 10px;
-}
-
-#imgBox.show-img {
-  max-height: 300px;
-  margin: 17px auto;
-  border: 1px solid #d1d1d1;
 }
 
 .error {
