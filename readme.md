@@ -1,6 +1,6 @@
 # QR Generetor power by qrserver
 
-![QRGenerator](/assets/Screenshot.png "QR Generator")
+![QRGenerator](/assets/Screenshot.png 'QR Generator')
 
 ## Dependencies
 
@@ -13,16 +13,21 @@
 ```bash
   git clone https://github.com/mvazquezmartin/qrgenerator.git
 ```
+
 2. Open **index.html** in your web browser.
+
+## API
+
+[GOQR](https://goqr.me/api/)
 
 ## Contributing
 
 Contributions are welcome! If you want to contribute to this project, feel free to fork the repository and submit a pull request.
-
 
 ## License
 
 This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/)
 
 ## Author
+
 - [@mvazquezmartin](https://github.com/mvazquezmartin)

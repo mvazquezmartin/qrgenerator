@@ -9,16 +9,15 @@ const defaultQR =
 
 function generateQR() {
   const qrTextValue = $qrText.value;
-  if (qrTextValue.trim().length > 0) {
+  if (qrTextValue.trim().length !== 0) {
     const qrURL = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${qrTextValue}`;
     $qrImage.src = qrURL;
-    $imgBox.classList.add('show-img');
     $btnDownload.dataset.url = qrURL;
   } else {
     $qrText.classList.add('error');
     setTimeout(() => {
       $qrText.classList.remove('error');
-    }, 1000);
+    }, 700);
   }
 }
 
