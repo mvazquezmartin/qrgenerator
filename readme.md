@@ -13,7 +13,7 @@
 ```bash
   git clone https://github.com/mvazquezmartin/qrgenerator.git
 ```
-2. Open index.html in your web browser.
+2. Open **index.html** in your web browser.
 
 ## Contributing
 
