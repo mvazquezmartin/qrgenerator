@@ -8,16 +8,29 @@
 
 body {
   background: #262a2f;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 7px;
+  padding: 0;
+
+  @media only screen and (max-width: 480px) {
+    & {
+      flex-direction: column;      
+      padding-top: 2rem;
+    }
+  }
 }
 
 .container {
-  max-width: 400px;
-  width: 90%;
+  max-width: 400px;  
   padding: 25px 35px;
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   background: #fff;
   border-radius: 10px;
 }
@@ -37,7 +50,7 @@ input {
   border-radius: 5px;
 }
 
-.btn-container{
+.btn-container {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
@@ -91,6 +104,26 @@ button:active {
 
 .error {
   animation: shake 0.1s linear 7;
+}
+
+footer {
+  display: flex;
+  justify-content: start;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  width: 100%;
+  @media only screen and (max-width: 480px) {
+    & {
+      justify-content: center;
+      padding-top: 1.2rem;
+    }
+  }
+
+  svg {
+    transition: fill 0.3s ease;
+    &:hover {
+      fill: #fff;
+    }
+  }
 }
 
 @keyframes shake {
