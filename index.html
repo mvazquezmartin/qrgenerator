@@ -10,11 +10,22 @@
   <body>
     <div class="container">
       <h1>Enter your URL</h1>
-      <input type="text" autocomplete="off" id="qrText" placeholder="URL" />
-      <div id="imgBox">
-        <img src="" id="qrImage" />
+      <input
+        type="text"
+        autocomplete="off"
+        id="qrText"
+        placeholder="@mvazquezmartin"
+      />
+      <div id="imgBox" class="show-img">
+        <img
+          src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://github.com/mvazquezmartin"
+          id="qrImage"
+        />
       </div>
-      <button id="btnGenerate">Generate QR Code</button>
+      <div class="btn-container">
+        <button id="btnGenerate">Generate QR Code</button>
+        <button id="btnDownload">Download 💾</button>
+      </div>
     </div>
     <script type="module" src="index.js"></script>
   </body>
