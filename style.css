@@ -8,8 +8,7 @@
 }
 
 body {
-  background: #262a2f;
-  /* background: #333; */
+  background: #262a2f;  
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
